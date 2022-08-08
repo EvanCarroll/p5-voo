@@ -1,10 +1,11 @@
 package Voo;
 
-use 5.006;
+use 5.018;
 use strict;
 use warnings;
+use feature 'lexical_subs';
 
-our $VERSION = '42.42';
+our $VERSION = '42.43';
 
 sub import {
 	use Data::Dumper; warn Dumper \@_;
@@ -27,12 +28,12 @@ This module uses lexical subs (enabled with C<use v5.26;> or
 C<use feature 'lexical_subs';> to run a subroutine at compile time.
 
 		die 7; # never called, runs in runtime
-
-    use Voo do {
-      my sub foo { die 42 };
+		
+		use Voo do {
+			my sub foo { die 42 };
 			\&foo;
 		};
-
+		
 		die 7; # never called, runs in runtime
 
 =head1 EXPORT

@@ -9,7 +9,7 @@ my %WriteMakefileArgs = (
     VERSION_FROM     => 'lib/Voo.pm',
     ABSTRACT_FROM    => 'lib/Voo.pm',
     LICENSE          => 'artistic_2',
-    MIN_PERL_VERSION => '5.006',
+    MIN_PERL_VERSION => '5.018',
     CONFIGURE_REQUIRES => {
         'ExtUtils::MakeMaker' => '0',
     },
