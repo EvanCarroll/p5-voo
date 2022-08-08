@@ -2,8 +2,8 @@ Changes
 lib/Voo.pm
 Makefile.PL
 MANIFEST			This list of files
-README
 t/00-load.t
+t/01_call.t
 t/manifest.t
 t/pod-coverage.t
 t/pod.t
